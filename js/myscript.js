@@ -17,14 +17,14 @@ function obtenerDatos(e) {
     var listOfTo = document.getElementById("todoList");
 
     let currentList = listOfTo.innerHTML;
-    listOfTo.innerHTML = currentList + `<input type = "checkbox" id="task" name="todo" /> ${newT} <br> `
+    listOfTo.innerHTML = currentList + `<input type = "checkbox" id="post" name="todo" /> ${newT} <br> `
     
 }
 
 function todoClear(e) {
     e.preventDefault();
 
-    let elements = values.querySelectorAll("#task");
+    let elements = values.querySelectorAll("#post");
     elements.forEach((x) => {
       x.checked = false;
     });
@@ -34,7 +34,7 @@ function todoClear(e) {
 function todoMark(e) {
     e.preventDefault();
 
-    let elements = values.querySelectorAll("#task");
+    let elements = values.querySelectorAll("#post");
     elements.forEach((x) => {
       x.checked = true;
     });
